@@ -1,0 +1,78 @@
+---
+title: Issue Tracking and Project Management
+---
+
+- [acunote.com](https://www.acunote.com/) — Free project management and SCRUM software for up to 5 team members
+- [asana.com](https://asana.com/) — Free for private project with collaborators
+- [Backlog](https://backlog.com/) — Everything your team needs to release great projects in one platform. The free plan offers 1 Project with ten users & 100MB of storage.
+- [Basecamp](https://basecamp.com/personal) - To-do lists, milestone management, forum-like messaging, file sharing, and time tracking. Up to 3 projects, 20 users, and 1GB of storage space.
+- [bitrix24.com](https://www.bitrix24.com/) — Intranet and project management tool. The free plan has 5GB for unlimited users.
+- [cacoo.com](https://cacoo.com/) — Online real-time diagrams: flowchart, UML, network. Free max. 15 users/diagram, 25 sheets
+- [Chpokify](https://chpokify.com/) — Teams-based Planning Poker that saves time on sprint estimation. Free up to 5 users, free Jira integrations, unlimited video calls, unlimited teams, unlimited sessions.
+- [clickup.com](https://clickup.com/) — Project management. Free, premium version with cloud storage. Mobile applications and Git integrations are available.
+- [Clockify](https://clockify.me/) - Time tracker and timesheet app that lets you track work hours across projects. Unlimited users, free forever.
+- [Cloudcraft](https://cloudcraft.co/) — Design a professional architecture diagram in minutes with the Cloudcraft visual designer, optimized for AWS with intelligent components that show live data too. Free plan has unlimited private diagrams for single user.
+- [Codegiant](https://codegiant.io/) — Project Management with Repository hosting & CI/CD. Free Plan Offers Unlimited Repositories, Projects & Documents with 5 Team Members. 500 CI/CD minutes per month. 30000 Serverless Code Run minutes per month 1GB repository storage.
+- [Confluence](https://www.atlassian.com/software/confluence) - Atlassian's content collaboration tool is used to help teams collaborate and share knowledge efficiently. Free plan for up to 10 users.
+- [contriber.com](https://www.contriber.com/) — Customizable project management platform, free starter plan, five workspaces
+- [diagrams.net](https://app.diagrams.net/) — Online diagrams stored locally in Google Drive, OneDrive, or Dropbox. Free for all features and storage levels
+- [freedcamp.com](https://freedcamp.com/) - tasks, discussions, milestones, time tracking, calendar, files and password manager. Free plan with unlimited projects, users, and file storage.
+- [easyretro.io](https://www.easyretro.io/) — Simple and intuitive sprint retrospective tool. The free plan has three public boards and one survey per board per month.
+- [GForge](https://gforge.com/) — Project Management and issue Tracking toolset for complex projects with self-premises and SaaS options. SaaS free plan offers the first five users free & free for Open Source Projects.
+- [gleek.io](https://www.gleek.io/) — Free description-to-diagrams tool for developers. Create informal UML class, object, or entity-relationship diagrams using your keyword.
+- [GraphQL Inspector](https://github.com/marketplace/graphql-inspector) - GraphQL Inspector outputs a list of changes between two GraphQL schemas. Every difference is precisely explained and marked as breaking, non-breaking, or dangerous.
+- [huboard.com](https://huboard.com/) — Instant project management for your GitHub issues, free for Open Source
+- [Hygger](https://hygger.io/) — Project management platform. The free plan offers unlimited users, projects & boards with 100 MB of Storage.
+- [Instabug](https://instabug.com/) — A comprehensive bug reporting and in-app feedback SDK for mobile apps. Free plan up to 1 app and one member.
+- [WishKit](https://wishkit.io/) — Collect in-app user feedback for your iOS/macOS app and prioritize features based on user votes. Free plan up to 1 app.
+- [Ilograph](https://www.ilograph.com/) — interactive diagrams that allow users to see their infrastructure from multiple perspectives and levels of detail. Charts can be expressed in code. The free tier has unlimited private diagrams with up to 3 viewers.
+- [Jira](https://www.atlassian.com/software/jira) — Advanced software development project management tool used in many corporate environments. Free plan for up to 10 users.
+- [kanbanflow.com](https://kanbanflow.com/) — Board-based project management. Free, premium version with more options
+- [kanbantool.com](https://kanbantool.com/) — Kanban board-based project management. The free plan has two boards and two users, without attachments or files.
+- [Kitemaker.co](https://kitemaker.co/) - Collaborate through all phases of the product development process and keep track of work across Slack, Discord, Figma, and Github. Unlimited users, unlimited spaces. Free plan up to 250 work items.
+- [Kiter.app](https://www.kiter.app/) - Let anyone organize their job search and track interviews, opportunities, and connections. Powerful web app and Chrome extension. Completely free.
+- [Kumu.io](https://kumu.io/) — Relationship maps with animation, decorations, filters, clustering, spreadsheet imports, etc. The free tier allows unlimited public projects. Graph size unlimited. Free private projects for students. Sandbox mode is available if you prefer not to leave your file publicly online (upload, edit, download, discard).
+- [Linear](https://linear.app/) — Issue tracker with a streamlined interface. Free for unlimited members, up to 10MB file upload size, 250 issues (excluding Archive)
+- [leiga.com](https://www.leiga.com/) — Leiga is a SaaS product that uses AI to automatically manage your projects, helping your team stay focused and unleash immense potential, ensuring your projects progress as planned. Free for up to 10 users, 20 custom fields, 2GB of storage space, Video Recording with AI limited to 5 mins/video, Automation Runs at 20/user/month.
+- [Lucidchart](https://www.lucidchart.com/) - An online diagram tool with collaboration features. Free plan with three editable documents, 100 professional templates, and basic collaboration features.
+- [MeisterTask](https://www.meistertask.com/) — Online task management for teams. Free up to 3 projects and unlimited project members.
+- [MeuScrum](https://www.meuscrum.com/en) - Free online scrum tool with kanban board
+- [nTask](https://www.ntaskmanager.com/) — Project management software that enables your teams to collaborate, plan, analyze, and manage everyday tasks. The essential plan is free forever with 100 MB storage and five users/teams. Unlimited workspaces, meetings, assignments, timesheets, and issue tracking.
+- [Ora](https://ora.pm/) - Agile task management & team collaboration. Free for up to 3 users and files are limited to 10 MB.
+- [pivotaltracker.com](https://www.pivotaltracker.com/) — Free for unlimited public projects and two private projects with three total active users (read-write) and unlimited passive users (read-only).
+- [plan.io](https://plan.io/) — Project Management with Repository Hosting and more options. Free for two users with ten customers and 500MB Storage
+- [Plane](https://plane.so/) - Plane is a simple, extensible, open-source project and product management tool. Free for unlimited members, up to 5MB file upload size, 1000 issues.
+- [planitpoker.com](https://www.planitpoker.com/) — Free online planning poker (estimation tool)
+- [point.poker](https://www.point.poker/) - Online Planning Poker (consensus-based estimation tool). Free for unlimited users, teams, sessions, rounds, and votes. You don't need to register.
+- [ScrumFast](https://www.scrumfast.com/) - Scrum board with a very intuitive interface, free up to 5 users.
+- [Shake](https://www.shakebugs.com/) - In-app bug reporting and feedback tool for mobile apps. Free plan, ten bug reports per app/month.
+- [Shortcut](https://shortcut.com/) - Project management platform. Free for up to 10 users forever.
+- [SpeedBoard](https://speedboard.app/) - Board for Agile and Scrum retrospectives - Free.
+- [SuperPM](https://superpm.app/) - Versatile project management platform. Free for up to 3 projects, unlimited users, 1 GB storage.
+- [Tadum](https://tadum.app/) - Meeting agenda and minutes app designed for recurring meetings, free for teams of up to 10
+- [taiga.io](https://taiga.io/) — Project management platform for startups and agile developers, free for Open Source
+- [Tara AI](https://tara.ai/) — Simple sprint management service. The free plan has unlimited tasks, sprints, and workspaces without user limits.
+- [targetprocess.com](https://www.targetprocess.com/) — Visual project management, from Kanban and Scrum to almost any operational process. Free for unlimited users, up to 1,000 data entities {[more details](https://www.targetprocess.com/pricing/)}
+- [taskade.com](https://www.taskade.com/) — Real-time collaborative task lists and team outlines. The free plan has one workspace with unlimited tasks and projects; 1GB file storage; 1-week project history; and five attendees per video meeting.
+- [taskulu.com](https://taskulu.com/) — Role based project management. Free up to 5 users. Integration with GitHub/Trello/Dropbox/Google Drive
+- [Teaminal](https://www.teaminal.com/) - Standup, retro, and sprint planning tool for remote teams. Free for up to 15 users.
+- [teamwork.com](https://teamwork.com/) — Project management & Team Chat. Free for five users and two projects. Premium plans are available.
+- [teleretro.com](https://www.teleretro.com/) — Simple and fun retrospective tool with icebreakers, gifs and emojis. The free plan includes three retros and unlimited members.
+- [testlio.com](https://testlio.com/) — Issue tracking, test management and beta testing platform. Free for private use
+- [terrastruct.com](https://terrastruct.com/) — Online diagram maker specifically for software architecture. Free tier up to 4 layers per diagram.
+- [todoist.com](https://todoist.com/) — Collaborative and individual task management. The free plan has: 5 active projects, five users in the project, file uploading up to 5MB, three filters, and one week of activity history.
+- [trello.com](https://trello.com/) — Board-based project management. Unlimited Personal Boards, 10 Team Boards.
+- [Tweek](https://tweek.so/) — Simple Weekly To-Do Calendar & Task Management.
+- [ubertesters.com](https://ubertesters.com/) — Test platform, integration and crowd testers, 2 projects, five members
+- [vabotu](https://vabotu.com/) - A collaborative tool for project management. Free and other plans are available. The Freelance plan is for ten users and includes messaging, task boards, 5GB online storage, workspaces, and export data.
+- [Wikifactory](https://wikifactory.com/) — Product designing Service with Projects, VCS & Issues. The free plan offers unlimited projects & collaborators and 3GB storage.
+- [Yodiz](https://www.yodiz.com/) — Agile development and issue tracking. Free up to 3 users, unlimited projects.
+- [YouTrack](https://www.jetbrains.com/youtrack/buy/#edition=incloud) — Free hosted YouTrack (InCloud) for FOSS projects and private projects (free for three users). Includes time tracking and agile boards
+- [zenhub.com](https://www.zenhub.com/) — The only project management solution inside GitHub. Free for public repos, OSS, and nonprofit organizations
+- [zenkit.com](https://zenkit.com/) — Project management and collaboration tool. Free for up to 5 members, 5 GB attachments.
+- [Zube](https://zube.io/) — Project management with free plan for 4 Projects & 4 users. GitHub integration is available.
+- [Toggl](https://toggl.com/) — Provides two free productivity tools. [Toggl Track](https://toggl.com/track/) for time management and tracking app with a free plan provides seamless time tracking and reporting designed with freelancers in mind. It has unlimited tracking records, projects, clients, tags, reporting, and more. And [Toggl Plan](https://toggl.com/plan/) for task planning with a free plan for solo developers with unlimited tasks, milestones, and timelines.
+- [Sflow](https://sflow.io/) — sflow.io is a project management tool built for agile software development, marketing, sales, and customer support, especially for outsourcing and cross-organization collaboration projects. Free plan up to 3 projects and five members.
+- [Pulse.red](https://pulse.red/) — Free Minimalistic Time Tracker and Timesheet app for projects.
+
+![](/assets/images/issue-tracking-and-project-management/01-51c2880f.png)
