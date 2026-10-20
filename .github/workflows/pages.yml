@@ -19,8 +19,11 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
-      - name: Validate post conventions
-        run: bundle exec ruby scripts/validate_posts.rb
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test search and sorting
+        run: node --test test/search_test.mjs
       - name: Test ordering, content, and validation
         run: bundle exec ruby test/site_test.rb
       - name: Build production site

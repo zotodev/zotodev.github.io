@@ -1,26 +1,27 @@
 ---
 layout: default
 ---
-<section class="intro" aria-labelledby="intro-heading">
-  <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> THE ZOTO JOURNAL</p>
-  <h1 id="intro-heading">Ideas, notes, and<br><span>things worth sharing.</span></h1>
-  <p class="intro-description">A place to think out loud, follow a curiosity,<br class="desktop-break"> and write things down along the way.</p>
-  <div class="intro-bottom"><span class="small-label">Written with curiosity.</span><span class="intro-arrow" aria-hidden="true">↓</span></div>
-</section>
-<section class="journal" aria-labelledby="posts-heading">
-  <div class="section-heading"><h2 id="posts-heading">Latest posts</h2><span class="post-count">{{ site.data.ordered_posts | size }} {% if site.data.ordered_posts.size == 1 %}entry{% else %}entries{% endif %}</span></div>
-  {% if site.data.ordered_posts.size > 0 %}
+{% include ordered-posts.html %}
+<section class="journal" data-index="{{ '/search.json' | relative_url }}" aria-labelledby="posts-heading">
+  <div class="list-heading">
+    <h1 id="posts-heading">Posts</h1>
+    <div class="list-controls">
+      <span id="result-count" role="status" aria-live="polite">{{ ordered_posts | size }} posts</span>
+      <label class="sr-only" for="sort">Sort posts</label>
+      <select id="sort" hidden>
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+        <option value="title">Title A–Z</option>
+      </select>
+    </div>
+  </div>
+  <p id="search-error" role="status" hidden>Search couldn't load. All posts are shown. Try again or clear your search.</p>
   <ol class="post-list">
-    {% for post in site.data.ordered_posts %}
-    <li><a class="post-card" href="{{ post.url | relative_url }}"><div class="post-card-content"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time><h3>{{ post.title | escape }}</h3><p>{{ post.description | escape }}</p></div><span class="post-arrow" aria-hidden="true">↗</span></a></li>
+    {% for post in ordered_posts %}
+    <li data-slug="{{ post.slug | escape }}">
+      <a class="post-row" href="{{ post.url | relative_url }}"><span class="post-title">{{ post.title | escape }}</span><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time></a>
+    </li>
     {% endfor %}
   </ol>
-  {% else %}
-  <div class="empty-state">
-    <div class="empty-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6M8 13h8m-8 4h5"/></svg></div>
-    <h3>No posts yet</h3>
-    <p>The first page is still unwritten.<br>Check back soon for something new.</p>
-    <span class="empty-caption"><span aria-hidden="true">✳</span> GOOD THINGS TAKE A LITTLE TIME</span>
-  </div>
-  {% endif %}
+  <p id="empty-message"{% if ordered_posts.size > 0 %} hidden{% endif %}>No posts yet.</p>
 </section>

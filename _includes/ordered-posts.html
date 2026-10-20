@@ -1,0 +1,6 @@
+{%- assign by_slug = site.posts | sort: 'slug' -%}
+{%- assign groups = by_slug | group_by_exp: 'post', "post.date | date: '%Y-%m-%d'" | sort: 'name' | reverse -%}
+{%- assign ordered_posts = '' | split: '' -%}
+{%- for group in groups -%}
+  {%- assign ordered_posts = ordered_posts | concat: group.items -%}
+{%- endfor -%}

@@ -2,12 +2,10 @@
 layout: default
 ---
 <article class="article">
-  <a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> All posts</a>
+  <a class="back-link" href="{{ '/' | relative_url }}">← All posts</a>
   <header class="article-header">
-    <p class="eyebrow">THE ZOTO JOURNAL <span aria-hidden="true">/</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %d, %Y' }}</time></p>
     <h1>{{ page.title | escape }}</h1>
-    <p class="article-description">{{ page.description | escape }}</p>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>
   </header>
   <div class="prose">{{ content }}</div>
-  <div class="article-end"><span class="brand-mark" aria-hidden="true">z.</span><span>Thanks for reading.</span><a href="{{ '/' | relative_url }}">Back to all posts <span aria-hidden="true">↗</span></a></div>
 </article>

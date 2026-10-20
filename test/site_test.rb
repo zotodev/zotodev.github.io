@@ -3,9 +3,63 @@ require "tmpdir"
 require "fileutils"
 require "jekyll"
 require "nokogiri"
-require_relative "../scripts/validate_posts"
+require "json"
+require "date"
+require "yaml"
+
+module PostValidation
+  def self.errors(root)
+    errors = []
+    slugs = {}
+    Dir.glob(File.join(root, "_posts", "**", "*"), File::FNM_DOTMATCH).sort.each do |path|
+      next unless File.file?(path)
+      next if File.basename(path) == ".gitkeep"
+
+      relative = path.delete_prefix("#{root}/")
+      match = /\A(\d{4}-\d{2}-\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)\.md\z/.match(File.basename(path))
+      unless match
+        errors << "#{relative}: use YYYY-MM-DD-lowercase-slug.md"
+        next
+      end
+      begin
+        date = Date.iso8601(match[1])
+        raise ArgumentError if date.year < 1
+      rescue ArgumentError
+        errors << "#{relative}: invalid publication date #{match[1]}"
+      end
+      slug = match[2]
+      errors << "#{relative}: duplicate slug '#{slug}', already used by #{slugs[slug]}" if slugs.key?(slug)
+      slugs[slug] = relative
+
+      begin
+        text = File.read(path, encoding: "UTF-8").sub(/\A\uFEFF/, "")
+        front_matter = /\A---\r?\n(.*?)\r?\n---(?:\r?\n|\z)/m.match(text)
+        raise ArgumentError, "start with a YAML front matter block between --- lines" unless front_matter
+
+        data = YAML.safe_load(front_matter[1], permitted_classes: [Date, Time], aliases: false)
+        raise ArgumentError, "front matter must be a YAML mapping" unless data.is_a?(Hash)
+        %w[title].each do |key|
+          unless data[key].is_a?(String) && !data[key].strip.empty?
+            errors << "#{relative}: '#{key}' must be a non-empty string"
+          end
+        end
+        %w[date slug permalink layout published].each do |key|
+          errors << "#{relative}: do not override '#{key}'; use filename conventions and _drafts/" if data.key?(key)
+        end
+      rescue Psych::Exception, ArgumentError, EncodingError => e
+        errors << "#{relative}: #{e.message}"
+      end
+    end
+    errors
+  end
+end
+
+
 
 class BlogTest < Minitest::Test
+  def test_repository_post_conventions
+    assert_empty PostValidation.errors(ROOT)
+  end
   ROOT = File.expand_path("..", __dir__)
 
   def setup
@@ -25,11 +79,13 @@ class BlogTest < Minitest::Test
     FileUtils.remove_entry(@temporary)
   end
 
-  def post(filename, metadata = "title: 'An article'\ndescription: 'A useful description'", body = "A paragraph.")
+  def post(filename, metadata = "title: 'An article'", body = "A paragraph.")
     File.write(File.join(@source, "_posts", filename), "---\n#{metadata}\n---\n\n#{body}\n")
   end
 
   def build
+    problems = PostValidation.errors(@source)
+    raise Jekyll::Errors::FatalException, problems.join("\n") unless problems.empty?
     Jekyll.logger.log_level = :error
     config = Jekyll.configuration("source" => @source, "destination" => @destination, "quiet" => true)
     site = Jekyll::Site.new(config)
@@ -65,7 +121,10 @@ class BlogTest < Minitest::Test
     File.write(File.join(@source, "_drafts", "draft.md"), "---\ntitle: Secret draft\n---\nNot published")
     build
     expected = %w[alpha zebra backdated oldest].map { |slug| "/posts/#{slug}/" }
-    assert_equal expected, html.css(".post-card").map { |link| link["href"] }
+    assert_equal expected, html.css(".post-row").map { |link| link["href"] }
+    index = JSON.parse(File.read(File.join(@destination, "search.json")))
+    assert_equal expected, index.map { |entry| entry.fetch("url") }
+    refute index.any? { |entry| entry["text"].include?("Not published") }
     feed = Nokogiri::XML(File.read(File.join(@destination, "feed.xml")))
     assert_empty feed.errors
     assert_equal expected.map { |url| "https://zotodev.github.io#{url}" }, feed.xpath("//item/link").map(&:text)
@@ -76,7 +135,7 @@ class BlogTest < Minitest::Test
     refute File.exist?(File.join(@destination, "posts", "future"))
     post("2001-01-01-oldest.md", "title: 'Changed title'\ndescription: 'Changed summary'", "Edited body.")
     build
-    assert_equal expected, html.css(".post-card").map { |link| link["href"] }
+    assert_equal expected, html.css(".post-row").map { |link| link["href"] }
     assert_includes html("posts/oldest/index.html").text, "Changed title"
     assert_includes html("posts/oldest/index.html").text, "Edited body."
   end
@@ -100,6 +159,7 @@ class BlogTest < Minitest::Test
     File.write(File.join(image_dir, "test.svg"), '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80"><rect width="200" height="80" fill="#aaa"/></svg>')
     build
     article = html("posts/formatting/index.html")
+    refute_includes article.text, "Code & writing"
     assert_equal "A heading", article.at_css(".prose h2").text
     assert article.at_css(".prose ul li")
     assert article.at_css(".prose pre code")
@@ -128,7 +188,7 @@ class BlogTest < Minitest::Test
     post("2001-01-01-overrides.md", "title: Good\ndescription: Good\ndate: 2002-01-01\nslug: other\npermalink: /other/\nlayout: default\npublished: false")
     File.write(File.join(@source, "_posts", "2001-01-01-no-frontmatter.md"), "# A post")
     assert_includes errors, "'title' must be a non-empty string"
-    assert_includes errors, "'description' must be a non-empty string"
+
     assert_includes errors, "start with a YAML front matter block"
     %w[date slug permalink layout published].each { |key| assert_includes errors, "do not override '#{key}'" }
   end

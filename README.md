@@ -1,60 +1,46 @@
 # Zoto Blog
 
-A minimal Markdown blog at https://zotodev.github.io, built with Jekyll and published by GitHub Actions.
+Live at https://zotodev.github.io. One repository, Markdown posts, and automatic GitHub Pages publishing.
 
-## Publish a post
+## Write a post
 
-1. Copy `templates/post.md` into `_posts/YYYY-MM-DD-your-slug.md`.
-2. Set `title` and `description` in the YAML front matter. Quote both values.
-3. Write your article below the closing `---` line.
-4. Commit to `main`, or merge a pull request. A successful build publishes automatically.
+Create `_posts/YYYY-MM-DD-your-slug.md`:
 
 ```markdown
 ---
-title: "A new idea"
-description: "What this post is about, in one sentence."
+title: "Your article title"
 ---
 
-Your article goes here.
+Write your content here.
 ```
 
-Example filename: `_posts/2026-10-20-a-new-idea.md`. Its URL is `/posts/a-new-idea/`.
+Commit to `main` or merge a pull request. GitHub Actions checks and publishes the site. The homepage, search, RSS, and sitemap update automatically.
 
-The filename is the source of truth for date and slug. Use valid dates, lowercase letters or digits, and single hyphens between words. Slugs must be unique across all dates. Do not set `date`, `slug`, `permalink`, `layout`, or `published` in post metadata. Every post gets the shared article layout automatically.
+The filename supplies the publication date and URL. Example: `_posts/2026-10-20-a-new-idea.md` becomes `/posts/a-new-idea/`. Use a real date and a unique lowercase, hyphen-separated slug. Keep published filenames stable; edits to a title or body do not change the URL or date. Do not override `date`, `slug`, `permalink`, `layout`, or `published`. Older `description` metadata is optional and never displayed.
 
-Posts appear newest first. Posts on the same date sort alphabetically by slug. Backdated posts go into their chronological position. Editing a title or body does not change the order or URL. Keep published filenames stable so links keep working. The homepage, RSS, and sitemap update automatically.
-
-## Drafts and future posts
-
-Keep drafts in `_drafts/your-slug.md`; move them into `_posts/` with a date-prefixed filename to publish. Drafts are excluded from production. This is a public repository: draft source files are publicly readable. Never commit private content or secrets.
-
-Dates use Asia/Kolkata. Future-dated posts stay hidden until a build on or after that date. There is no scheduled publishing job. To publish an eligible future post, run **Actions → Validate, build, and publish → Run workflow**, or make a new commit to `main`.
-
-## Images and links
-
-Put images in `assets/images/<post-slug>/` and include meaningful alternative text:
+Put images in `assets/images/<post-slug>/` and use descriptive alternative text:
 
 ```markdown
 ![A description of the image](/assets/images/a-new-idea/example.webp)
 ```
 
-Link to other articles using `/posts/their-slug/`. Use fenced code blocks with a language name for syntax highlighting.
+Use `_drafts/your-slug.md` for drafts. They do not appear on the site or in search, but their source is public in this repository. Dates use Asia/Kolkata. Future posts appear only after a build on or after their date; run the workflow manually when needed.
 
-## Local development
+## Search and organization
 
-Use Ruby 3.3 and Bundler:
+Posts start newest first, with slug order breaking date ties. Readers can choose oldest first or title A–Z. Search matches every query word against published titles and full article text, without regard to case. Query and sort are kept in the URL. No external search service is used. Without JavaScript, the newest-first list and articles still work.
+
+## Development
+
+Use Ruby 3.3, Bundler, and Node.js for the small JavaScript tests:
 
 ```sh
 bundle install
-bundle exec ruby scripts/validate_posts.rb
 bundle exec ruby test/site_test.rb
-bundle exec jekyll serve
+node --test test/search_test.mjs
+bundle exec jekyll serve --destination ../build
 ```
 
-Open http://localhost:4000. Tests use temporary copies and never publish their articles. To preview drafts locally, use `bundle exec jekyll serve --drafts`.
+Open http://localhost:4000. Tests use temporary posts, never published fixtures. To preview drafts, add `--drafts`. Convention validation runs as part of the tests before every production build. Failed tests or builds preserve the previous live site.
 
-## Deployment
-
-GitHub Pages must use **GitHub Actions** as its build source. The workflow validates conventions, tests behavior, builds Jekyll, and deploys only on `main` or manual runs. Pull requests validate and build without deploying. Failed builds leave the previous live site intact.
-
-The validator runs inside Jekyll too, so an ordinary local build also rejects invalid posts. Keep the Gemfile lock committed for reproducible builds. No database, CMS, analytics, external fonts, or frontend framework is required.
+GitHub Pages uses GitHub Actions as its source. There is one workflow; pull requests check and build without deploying. There is no database, CMS, frontend framework, or search dependency.
