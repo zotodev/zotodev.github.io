@@ -1,0 +1,31 @@
+title: Zoto Blog
+description: "Ideas, notes, and things worth sharing."
+url: https://zotodev.github.io
+baseurl: ""
+timezone: Asia/Kolkata
+lang: en
+permalink: /posts/:slug/
+future: false
+show_drafts: false
+strict_front_matter: true
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - test
+  - vendor
+  - templates
