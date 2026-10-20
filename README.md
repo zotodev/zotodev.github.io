@@ -28,7 +28,7 @@ Use `_drafts/your-slug.md` for drafts. They do not appear on the site or in sear
 
 ## Search and organization
 
-Posts start newest first, with slug order breaking date ties. Readers can choose oldest first or title A–Z. Search matches every query word against published titles only, without regard to case. It uses the titles already on the page, so no content index or additional search request is needed. A loading skeleton appears while typed searches update. Query and sort are kept in the URL. No external search service is used. Without JavaScript, the newest-first list and articles still work.
+Posts start newest first, with slug order breaking date ties. Search matches every query word against published titles only, without regard to case. It uses the titles already on the page, so no content index or additional search request is needed. A loading skeleton appears while typed searches update. The search query is kept in the URL. No external search service is used. Without JavaScript, the newest-first list and articles still work.
 
 ## Development
 
@@ -44,3 +44,11 @@ bundle exec jekyll serve --destination ../build
 Open http://localhost:4000. Tests use temporary posts, never published fixtures. To preview drafts, add `--drafts`. Convention validation runs as part of the tests before every production build. Failed tests or builds preserve the previous live site.
 
 GitHub Pages uses GitHub Actions as its source. There is one workflow; pull requests check and build without deploying. There is no database, CMS, frontend framework, or search dependency.
+
+## Hosting and caching
+
+The workflow builds Jekyll into static HTML, CSS, JavaScript, and images, then deploys them with GitHub Pages' official artifact and deployment actions. No server runtime, custom HTTP headers, or service worker is required.
+
+CSS and JavaScript URLs have a build version so a newly loaded page gets its matching assets. The original Zoto JPEG uses a content-versioned filename for the header, favicon, and sharing image. When changing the logo, use a new filename and update its references.
+
+GitHub Pages controls the HTML cache headers. Asset versioning cannot update a document already open in a tab; refresh it to load a deployment. Browser back/forward navigation can also restore an older document.

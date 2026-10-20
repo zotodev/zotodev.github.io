@@ -104,6 +104,14 @@ class BlogTest < Minitest::Test
     build
     assert_includes html.text, "No posts yet"
     assert_equal "Zoto Blog", html.at_css("title").text
+    assert_empty html.css("select")
+    logo = html.at_css(".brand img")
+    assert_equal "Zoto", logo["alt"]
+    assert File.exist?(File.join(@destination, logo["src"].delete_prefix("/")))
+    assert_equal logo["src"], html.at_css('link[rel="icon"]')["href"]
+    html.css('script[src], link[rel="stylesheet"]').each do |asset|
+      assert_match(/\?v=\d+$/, asset["src"] || asset["href"])
+    end
     assert_equal "https://zotodev.github.io/", html.at_css('link[rel="canonical"]')["href"]
     assert_includes html("404.html").text, "isn't here"
     assert_equal 0, Nokogiri::XML(File.read(File.join(@destination, "feed.xml"))).xpath("//item").size
