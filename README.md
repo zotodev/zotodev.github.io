@@ -28,7 +28,7 @@ Use `_drafts/your-slug.md` for drafts. They do not appear on the site or in sear
 
 ## Search and organization
 
-Posts start newest first, with slug order breaking date ties. Readers can choose oldest first or title A–Z. Search matches every query word against published titles and full article text, without regard to case. Query and sort are kept in the URL. No external search service is used. Without JavaScript, the newest-first list and articles still work.
+Posts start newest first, with slug order breaking date ties. Readers can choose oldest first or title A–Z. Search matches every query word against published titles only, without regard to case. It uses the titles already on the page, so no content index or additional search request is needed. A loading skeleton appears while typed searches update. Query and sort are kept in the URL. No external search service is used. Without JavaScript, the newest-first list and articles still work.
 
 ## Development
 

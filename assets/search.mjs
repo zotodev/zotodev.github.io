@@ -2,7 +2,7 @@ export function selectPosts(posts, query, sort) {
   const words = query.toLocaleLowerCase("en").trim().split(/\s+/).filter(Boolean);
   const compare = (a, b) => a.localeCompare(b, "en", { sensitivity: "base" });
   return posts.filter(post => {
-    const text = `${post.title} ${post.text || ""}`.toLocaleLowerCase("en");
+    const text = post.title.toLocaleLowerCase("en");
     return words.every(word => text.includes(word));
   }).sort((a, b) => {
     const primary = sort === "title" ? compare(a.title, b.title)
@@ -22,15 +22,12 @@ if (typeof document !== "undefined") {
     const sort = journal.querySelector("#sort");
     const count = journal.querySelector("#result-count");
     const empty = journal.querySelector("#empty-message");
-    const error = journal.querySelector("#search-error");
+    const skeleton = journal.querySelector(".loading-skeleton");
     const posts = [...list.children].map(node => ({
       node, slug: node.dataset.slug,
       title: node.querySelector(".post-title").textContent,
       date: node.querySelector("time").dateTime,
-      url: node.querySelector("a").getAttribute("href"),
     }));
-    let index;
-    let revision = 0;
     let timer;
     sort.hidden = false;
 
@@ -49,47 +46,27 @@ if (typeof document !== "undefined") {
       history.replaceState(null, "", url);
     }
 
-    async function render() {
-      const current = ++revision;
+    function render() {
       const query = input.value.trim();
-      let searchable = posts;
-      error.hidden = true;
-      count.textContent = query ? "Searching…" : `${posts.length} posts`;
-      if (query) {
-        try {
-          if (!index) {
-            index = fetch(journal.dataset.index).then(response => {
-              if (!response.ok) throw new Error("Index unavailable");
-              return response.json();
-            }).then(entries => {
-              if (!Array.isArray(entries) || entries.some(entry => typeof entry.url !== "string" || typeof entry.text !== "string")) {
-                throw new Error("Invalid search index");
-              }
-              return new Map(entries.map(entry => [entry.url, entry.text]));
-            }).catch(failure => { index = undefined; throw failure; });
-          }
-          const text = await index;
-          if (current !== revision) return;
-          searchable = posts.map(post => ({ ...post, text: text.get(post.url) || "" }));
-        } catch {
-          if (current !== revision) return;
-          error.hidden = false;
-          searchable = posts;
-        }
-      }
-      if (current !== revision) return;
-      const found = selectPosts(searchable, error.hidden ? query : "", sort.value);
+      const found = selectPosts(posts, query, sort.value);
+      skeleton.hidden = true;
+      list.hidden = false;
+      journal.setAttribute("aria-busy", "false");
       const shown = new Set(found.map(post => post.node));
       for (const post of posts) post.node.hidden = !shown.has(post.node);
       for (const post of found) list.append(post.node);
-      count.textContent = `${found.length} ${query && error.hidden ? (found.length === 1 ? "result" : "results") : (found.length === 1 ? "post" : "posts")}`;
+      count.textContent = `${found.length} ${query ? (found.length === 1 ? "result" : "results") : (found.length === 1 ? "post" : "posts")}`;
       empty.hidden = found.length > 0;
-      empty.textContent = query && error.hidden ? "No matching posts" : "No posts yet.";
+      empty.textContent = query ? "No matching posts" : "No posts yet.";
     }
 
     input.addEventListener("input", () => {
-      ++revision;
       clearTimeout(timer);
+      skeleton.hidden = false;
+      list.hidden = true;
+      empty.hidden = true;
+      count.textContent = "Searching…";
+      journal.setAttribute("aria-busy", "true");
       saveURL();
       timer = setTimeout(render, 120);
     });

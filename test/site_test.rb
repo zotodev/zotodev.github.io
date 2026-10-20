@@ -3,7 +3,6 @@ require "tmpdir"
 require "fileutils"
 require "jekyll"
 require "nokogiri"
-require "json"
 require "date"
 require "yaml"
 
@@ -122,9 +121,7 @@ class BlogTest < Minitest::Test
     build
     expected = %w[alpha zebra backdated oldest].map { |slug| "/posts/#{slug}/" }
     assert_equal expected, html.css(".post-row").map { |link| link["href"] }
-    index = JSON.parse(File.read(File.join(@destination, "search.json")))
-    assert_equal expected, index.map { |entry| entry.fetch("url") }
-    refute index.any? { |entry| entry["text"].include?("Not published") }
+    refute File.exist?(File.join(@destination, "search.json"))
     feed = Nokogiri::XML(File.read(File.join(@destination, "feed.xml")))
     assert_empty feed.errors
     assert_equal expected.map { |url| "https://zotodev.github.io#{url}" }, feed.xpath("//item/link").map(&:text)

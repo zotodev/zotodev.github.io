@@ -2,11 +2,11 @@
 layout: default
 ---
 {% include ordered-posts.html %}
-<section class="journal" data-index="{{ '/search.json' | relative_url }}" aria-labelledby="posts-heading">
+<section class="journal" aria-labelledby="posts-heading">
   <div class="list-heading">
     <h1 id="posts-heading">Posts</h1>
     <div class="list-controls">
-      <span id="result-count" role="status" aria-live="polite">{{ ordered_posts | size }} posts</span>
+      <span id="result-count" role="status" aria-live="polite">{{ ordered_posts | size }} {% if ordered_posts.size == 1 %}post{% else %}posts{% endif %}</span>
       <label class="sr-only" for="sort">Sort posts</label>
       <select id="sort" hidden>
         <option value="newest">Newest</option>
@@ -15,7 +15,11 @@ layout: default
       </select>
     </div>
   </div>
-  <p id="search-error" role="status" hidden>Search couldn't load. All posts are shown. Try again or clear your search.</p>
+  <div class="loading-skeleton" aria-hidden="true" hidden>
+    <div class="skeleton-row"><span></span><span></span></div>
+    <div class="skeleton-row"><span></span><span></span></div>
+    <div class="skeleton-row"><span></span><span></span></div>
+  </div>
   <ol class="post-list">
     {% for post in ordered_posts %}
     <li data-slug="{{ post.slug | escape }}">
