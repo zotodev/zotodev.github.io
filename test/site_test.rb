@@ -176,6 +176,24 @@ class BlogTest < Minitest::Test
     assert File.exist?(File.join(@destination, "assets", "images", "formatting", "test.svg"))
   end
 
+  def test_code_samples_are_not_parsed_as_liquid
+    post("2001-01-01-liquid-looking.md", "title: 'Samples'", <<~MD)
+      ```tsx
+      return <div style={{ color: 'red' }}>Failed</div>;
+      services={{
+        requests: {
+          create,
+          get: vi.fn(),
+        },
+      }}
+      ```
+    MD
+    build
+    article = html("posts/liquid-looking/index.html")
+    assert_includes article.at_css(".prose pre").text, "{{ color: 'red' }}"
+    assert_includes article.at_css(".prose pre").text, "get: vi.fn()"
+  end
+
   def test_invalid_filenames_dates_and_duplicates
     post("2001-02-30-invalid.md")
     post("2001-01-01-Slug.md")

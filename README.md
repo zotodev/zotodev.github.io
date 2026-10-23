@@ -16,7 +16,7 @@ Write your content here.
 
 Commit to `main` or merge a pull request. GitHub Actions checks and publishes the site. The homepage, search, RSS, and sitemap update automatically.
 
-The filename supplies the publication date and URL. Example: `_posts/2026-10-20-a-new-idea.md` becomes `/posts/a-new-idea/`. Use a real date and a unique lowercase, hyphen-separated slug. Keep published filenames stable; edits to a title or body do not change the URL or date. Do not override `date`, `slug`, `permalink`, `layout`, or `published`. Older `description` metadata is optional and never displayed.
+The filename supplies the publication date and URL. Example: `_posts/2026-10-20-a-new-idea.md` becomes `/posts/a-new-idea/`. Use a real date and a unique lowercase, hyphen-separated slug. Keep published filenames stable; edits to a title or body do not change the URL or date. Do not override `date`, `slug`, `permalink`, `layout`, or `published`. Older `description` metadata is optional and never displayed. Post bodies are not processed as Liquid, so code samples may contain `{{` and `{%`.
 
 Put images in `assets/images/<post-slug>/` and use descriptive alternative text:
 
