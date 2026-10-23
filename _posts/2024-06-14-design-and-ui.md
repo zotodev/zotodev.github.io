@@ -1,0 +1,97 @@
+---
+title: Design and UI
+---
+
+- [AllTheFreeStock](https://allthefreestock.com/) - a curated list of free stock images, audio and videos.
+- [Float UI](https://floatui.com/) - free web development tool for quickly creating modern, responsive websites with sleek design, even for non-designers.
+- [Ant Design Landing Page](https://landing.ant.design/) - Ant Design Landing Page provides a template built by Ant Motion's motion components. It has a rich homepage template, downloads the template code package, and can be used quickly. You can also use the editor to quickly build your own dedicated page.
+- [Backlight](https://backlight.dev/) — With collaboration between developers and designers at heart, Backlight is a complete coding platform where teams build, document, publish, scale, and maintain Design Systems. The free plan allows up to 3 editors to work on one design system with unlimited viewers.
+- [BoxySVG](https://boxy-svg.com/app) — A free installable Web app for drawing SVGs and exporting in SVG, PNG, jpeg, and other formats.
+- [Carousel Hero](https://carouselhero.com/) - Free online tool to create social media carousels.
+- [Circum Icons](https://circumicons.com/) - Consistent open-source icons such as SVG for React, Vue, and Svelte.
+- [clevebrush.com](https://www.cleverbrush.com/) — Free Graphics Design / Photo Collage App. Also, they offer paid integration of it as a component.
+- [cloudconvert.com](https://cloudconvert.com/) — Convert anything to anything. Two hundred eight supported formats including videos and gifs.
+- [CodeMyUI](https://codemyui.com/) - Handpicked collection of Web Design & UI Inspiration with Code Snippets.
+- [ColorKit](https://colorkit.co/) - Create color palettes online or get inspiration from top palettes.
+- [coolors](https://coolors.co/) - Color palette generator. Free.
+- [Branition](https://branition.com/colors) - Hand-curated color pallets best fitted for brands.
+- [css-gradient.com](https://www.css-gradient.com/) - Free tool to quickly generate custom cross-browser CSS gradients. In RGB and HEX format.
+- [easyvectors.com](https://easyvectors.com/) — EasyVectors.com is a free SVG vector art stock. Download the best vector graphics absolutely for free.
+- [figma.com](https://www.figma.com/) — Online, collaborative design tool for teams; free tier includes unlimited files and viewers with a max of 2 editors and three projects.
+- [framer.com](https://www.framer.com/) - Framer helps you iterate and animate interface ideas for your next app, website, or product—starting with powerful layouts. For anyone validating Framer as a professional prototyping tool: unlimited viewers, up to 2 editors, and up to 3 projects.
+- [freeforcommercialuse.net](https://freeforcommercialuse.net/) — FFCU Worry-free model/property release stock photos
+- [Gradientos](https://www.gradientos.app/) - Makes choosing a gradient fast and easy.
+- [Icon Horse](https://icon.horse/) – Get the highest resolution favicon for any website from our simple API.
+- [Iconoir](https://iconoir.com/) – An open-source icons library with thousands of icons, supporting React, React Native, Flutter, Vue, Figma, and Framer.
+- [Icons8](https://icons8.com/) — Icons, illustrations, photos, music, and design tools. Free Plan offers Limited formats in lower resolution. Link to Icons8 when you use our assets.
+- [landen.co](https://www.landen.co/) — Generate, edit, and publish beautiful websites and landing pages for your startup. All without code. The free tier allows you to have one website, fully customizable and published on the web.
+- [Quant Ux](https://quant-ux.com/) - Quant Ux is a prototyping and design tool. - It's completely free and also open source.
+- [lensdump.com](https://lensdump.com/) - Free cloud image hosting.
+- [Lorem Picsum](https://picsum.photos/) - A Free tool, easy to use, stylish placeholders. After our URL, add your desired image size (width & height), and you'll get a random image.
+- [LottieFiles](https://lottiefiles.com/) - The world’s largest online platform for the world’s most miniature animation format for designers, developers, and more. Access Lottie animation tools and plugins for Android, iOS, and Web.
+- [MagicPattern](https://www.magicpattern.design/tools) — A collection of CSS & SVG background generators & tools for gradients, patterns, and blobs.
+- [marvelapp.com](https://marvelapp.com/) — Design, prototyping, and collaboration, free plan limited to one user and project.
+- [Mindmup.com](https://www.mindmup.com/) — Unlimited mind maps for free and store them in the cloud. Your mind maps are available everywhere, instantly, from any device.
+- [Mockplus iDoc](https://www.mockplus.com/idoc) - Mockplus iDoc is a powerful design collaboration & handoff tool. Free Plan includes three users and five projects with all features available.
+- [mockupmark.com](https://mockupmark.com/create/free) — Create realistic t-shirt and clothing mockups for social media and E-commerce, 40 free mockups.
+- [movingpencils.com](https://movingpencils.com/) — Fast, browser-based vector editor. Completely free.
+- [Octopus.do](https://octopus.do/) — Visual sitemap builder. Build your website structure in real time and rapidly share it to collaborate with your team or clients.
+- [Pencil](https://github.com/evolus/pencil) - Open source design tool using Electron.
+- [Penpot](https://penpot.app/) - Web-based, open-source design and prototyping tool. Supports SVG. Completely free.
+- [pexels.com](https://www.pexels.com/) - Free stock photos for commercial use. Has a free API that allows you to search photos by keywords.
+- [photopea.com](https://www.photopea.com/) — A Free, Advanced online design editor with Adobe Photoshop UI supporting PSD, XCF & Sketch formats (Adobe Photoshop, Gimp and Sketch App).
+- [pixlr.com](https://pixlr.com/) — Free online browser editor on the level of commercial ones.
+- [Plasmic](https://www.plasmic.app/) - A fast, easy-to-use, robust web design tool and page builder that integrates into your codebase. Build responsive pages or complex components; optionally extend with code; and publish to production sites and apps.
+- [Pravatar](https://pravatar.cc/) - Generate a random/placeholder fake avatar whose URL can be directly hot-linked in your web/app.
+- [Proto.io](https://www.proto.io/) - Create fully interactive UI prototypes without coding. The free tier is available when the free trial ends. The free tier includes one user, one project, five prototypes, 100MB of online storage, and a preview of the proto.io app.
+- [resizeappicon.com](https://resizeappicon.com/) — A simple service to resize and manage your app icons.
+- [Rive](https://rive.app/) — Create and ship beautiful animations to any platform. Free forever for Individuals. The service is an editor that also hosts all the graphics on their servers. They also provide runtimes for many platforms to run representations made using Rive.
+- [storyset.com](https://storyset.com/) — Create incredible free customized illustrations for your project using this tool.
+- [smartmockups.com](https://smartmockups.com/) — Create product mockups, 200 free mockups.
+- [tabler-icons.io](https://tabler-icons.io/) — Over 1500 free copy-and-paste SVG editable icons.
+- [UI Avatars](https://ui-avatars.com/) - Generate avatars with initials from names. The URLs can be directly hot-linked in your web/app. Support config parameters via the URL.
+- [unDraw](https://undraw.co/) - A constantly updated collection of beautiful SVG images that you can use completely free without attribution.
+- [unsplash.com](https://unsplash.com/) - Free stock photos for commercial and noncommercial purposes (do-whatever-you-want license).
+- [vectr.com](https://vectr.com/) — Free Design App for Web + Desktop.
+- [walkme.com](https://www.walkme.com/) — Enterprise Class Guidance and Engagement Platform, free plan three walk-thru up to 5 steps/walk.
+- [Webflow](https://webflow.com/) - WYSIWYG website builder with animations and website hosting. Free for two projects.
+- [Updrafts.app](https://updrafts.app/) - WYSIWYG website builder for tailwindcss-based designs. Free for non-commercial usage.
+- [whimsical.com](https://whimsical.com/) - Collaborative flowcharts, wireframes, sticky notes and mind maps. Create up to 4 free boards.
+- [Zeplin](https://zeplin.io/) — Designer and developer collaboration platform. Show designs, assets, and style guides. Free for one project.
+- [Pixelixe](https://pixelixe.com/) — Create and edit engaging, unique graphics and images online.
+- [Responsively App](https://responsively.app/) - A free dev tool for faster and more precise responsive web application development.
+- [SceneLab](https://scenelab.io/) - Online mockup graphics editor with an ever-expanding collection of free design templates
+- [xLayers](https://xlayers.dev/) - Preview and convert Sketch design files into Angular, React, Vue, LitElement, Stencil, Xamarin, and more (free and open source at <https://github.com/xlayers/xlayers>)
+- [Grapedrop](https://grapedrop.com/) — Responsive, powerful, SEO-optimized web page builder based on GrapesJS Framework. Free for the first five pages, unlimited custom domains, all features, and simple usage.
+- [Mastershot](https://mastershot.app/) - Completely free browser-based video editor. No watermark, up to 1080p export options.
+- [Unicorn Platform](https://unicornplatform.com/) - Effortless landing page builder with hosting. One website for free.
+- [react-favicon.com](https://react-favicon.com/) - Generate Favicons for your website using React and JSX using any font and icon library.
+- [SVGmix.com](https://www.svgmix.com/) - Massive repository of 300K+ of free SVG icons, collections, and brand logos. It has a simple vector editing program right in the browser for quick file editing.
+- [svgrepo.com](https://www.svgrepo.com/) - Explore, search, and find the best-fitting icons or vectors for your projects using various vector libraries. Download free SVG Vectors for commercial use.
+- [haikei.app](https://www.haikei.app/) - Haikei is a web app to generate unique SVG shapes, backgrounds, and patterns – ready to use with your design tools and workflow.
+- [Canva](https://canva.com/) - Free online design tool to create visual content.
+- [Superdesigner](https://superdesigner.co/) - A collection of free design tools to create unique backgrounds, patterns, shapes, images, and more with just a few clicks.
+- [TeleportHQ](https://teleporthq.io/) - Low-code Front-end Design & Development Platform. TeleportHQ is the collaborative front-end platform to instantly create and publish headless static websites. Three free projects, unlimited collaborators, and free code export.
+- [vector.express](https://vector.express/) — Convert your AI, CDR, DWG, DXF, EPS, HPGL, PDF, PLT, PS and SVG vector fast and easily.
+- [Vertopal](https://www.vertopal.com/) - Vertopal is a free online platform for converting files to various formats. Including developer converters like JPG to SVG, GIF to APNG, PNG to WEBP, JSON to XML, etc.
+- [okso.app](https://okso.app/) - Minimalistic online drawing app. Allows to create fast sketches and visual notes. Exports sketches to PNG, JPG, SVG, and WEBP. Also installable as PWA. Free to use for everyone (no registration is needed).
+- [Wdrfree SVG](https://wdrfree.com/free-svg) - Black and White Free SVG Cut files.
+- [Lucide](https://lucide.dev/) - Free customizable and consistent SVG icon toolkit.
+- [Logo.dev](https://www.logo.dev/) - Company logo API with 44M+ brands that's as easy as calling a URL. First 10,000 API calls are free.
+- [MDBootstrap](https://mdbootstrap.com/) - Free for personal & commercial use Bootstrap, Angular, React, and Vue UI Kits with over 700 components, stunning templates, 1-min installation, extensive tutorials & colossal community.
+- [TW Elements](https://tw-elements.com/) - Free Bootstrap components recreated with Tailwind CSS, but with better design and more functionalities.
+- [DaisyUI](https://daisyui.com/) -- Free. "Use Tailwind CSS but write fewer class names" offers components like buttons.
+- [Scrollbar.app](https://scrollbar.app/) -- Simple free web app for designing custom scrollbars for the web.
+- [css.glass](https://css.glass/) -- Free web app for creating glassmorphic designs using CSS.
+- [hypercolor.dev](https://hypercolor.dev/) -- A curated collection of Tailwind CSS color gradients also provides a variety of generators to create your own.
+- [iconify.design](https://icon-sets.iconify.design/) -- A collection of over 100 icon packs with a unified interface. Allows you to search for icons across packs and export individual icons as SVGs or for popular web frameworks.
+- [NextUI](https://nextui.org/) -- Free. Beautiful, fast, and modern React & Next.js UI library.
+- [Glyphs](https://glyphs.fyi/) -- Free, The Mightiest Icons on the Web, Fully editable & truly open source design system.
+- [ShadcnUI](https://ui.shadcn.com/) -- Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+- [HyperUI](https://www.hyperui.dev/) -- Free Open Source Tailwind CSS Components.
+- [Calendar Icons Generator](https://calendariconsgenerator.app/) -- Generate an entire year's worth of unique icons in a single click, absolutely FREE
+- [Image BG Blurer](https://imagebgblurer.com/) -- Generate a blurred background frame for an image, using that image source as the background blur, for Notion, Trello, Jira, and more tools
+- [Webstudio](https://webstudio.is/) -- Open-source alternative to Webflow. The free plan offers unlimited websites on their domain. Five websites with custom domains. Ten thousand page views/month. 2 GB asset storage.
+- [Nappy](https://nappy.co/) -- Beautiful photos of Black and Brown people, for free. For commercial and personal use.
+
+![](/assets/images/design-and-ui/01-12e09ee2.png)

@@ -1,0 +1,64 @@
+---
+title: Monitoring
+---
+
+- [Pingmeter.com](https://pingmeter.com/) - 5 uptime monitors with 10-minute interval. Monitor SSH, HTTP, HTTPS, and any custom TCP ports.
+- [appdynamics.com](https://www.appdynamics.com/) — Free for 24-hour metrics, application performance management agents limited to one Java, one .NET, one PHP, and one Node.js
+- [appneta.com](https://www.appneta.com/) — Free with 1-hour data retention
+- [appspector.com](https://appspector.com/) - Mission control for remote iOS/Android/Flutter debugging. Free for small traffic usage (64MB of logs).
+- [assertible.com](https://assertible.com/) — Automated API testing and monitoring. Free plans for teams and individuals.
+- [bleemeo.com](https://bleemeo.com/) - Free for 3 servers, 5 uptime monitors, unlimited users, unlimited dashboards, unlimited alerting rules.
+- [checklyhq.com](https://checklyhq.com/) - Open source E2E / Synthetic monitoring and deep API monitoring for developers. Free plan with five users and 50k+ check runs.
+- [circonus.com](https://www.circonus.com/) — Free for 20 metrics
+- [cloudsploit.com](https://cloudsploit.com/) — AWS security and configuration monitoring. Free: unlimited on-demand scans, unlimited users, unlimited stored accounts. Subscription: automated scanning, API access, etc.
+- [cronitor.io](https://cronitor.io/) - Performance insights and uptime monitoring for cron jobs, websites, APIs and more. A free tier with five monitors.
+- [datadoghq.com](https://www.datadoghq.com/) — Free for up to 5 nodes
+- [deadmanssnitch.com](https://deadmanssnitch.com/) — Monitoring for cron jobs. One free snitch (monitor), more if you refer others to sign up
+- [downtimemonkey.com](https://downtimemonkey.com/) — 60 uptime monitors, 5-minute interval. Email, Slack alerts.
+- [economize.cloud](https://economize.cloud/) — Economize helps demystify cloud infrastructure costs by organizing cloud resources to optimize and report the same. Free for up to $5,000 spent on Google Cloud Platform every month.
+- [elastic.co](https://www.elastic.co/solutions/apm) — Instant performance insights for JS developers. Free with 24-hour data retention
+- [freeboard.io](https://freeboard.io/) — Free for public projects. Dashboards for your Internet of Things (IoT) projects
+- [Grafana Cloud](https://grafana.com/products/cloud/) - Grafana Cloud is a composable observability platform that integrates metrics and logs with Grafana. Free: 3 users, ten dashboards, 100 alerts, metrics storage in Prometheus and Graphite (10,000 series, 14 days retention), logs storage in Loki (50 GB of logs, 14 days retention)
+- [healthchecks.io](https://healthchecks.io/) — Monitor your cron jobs and background tasks. Free for up to 20 checks.
+- [inspector.dev](https://www.inspector.dev/) - A complete Real-Time monitoring dashboard in less than one minute with a free forever tier.
+- [instrumentalapp.com](https://instrumentalapp.com/) - Beautiful and easy-to-use application and server monitoring with up to 500 metrics and 3 hours of data visibility for free
+- [keychest.net/speedtest](https://keychest.net/speedtest) - Independent speed test and TLS handshake latency test against Digital Ocean
+- [letsmonitor.org](https://letsmonitor.org/) - SSL monitoring, free for up to 5 monitors
+- [linkok.com](https://linkok.com/) - Online broken link checker, free for small websites up to 100 pages, completely free for open-source projects.
+- [loader.io](https://loader.io/) — Free load testing tools with limitations
+- [meercode.io](https://meercode.io/) — Meercode is the ultimate monitoring dashboard for your CI/CD builds. Free for open-source and one private repository.
+- [netdata.cloud](https://www.netdata.cloud/) — Netdata is an open-source tool to collect real-time metrics. It's a growing product and can also be found on GitHub!
+- [newrelic.com](https://www.newrelic.com/) — New Relic observability platform built to help engineers create more perfect software. From monoliths to serverless, you can instrument everything and then analyze, troubleshoot, and optimize your entire software stack. The free tier offers 100GB/month of free data ingest, one free full-access user, and unlimited free primary users.
+- [Middleware.io](https://middleware.io/) - Middleware observability platform provides complete visibility into your apps & stack, so you can monitor & diagnose issues at scale. They have a free forever plan for Dev community use that allows Log monitoring for up to 1M log events, Infrastructure monitoring & APM for up to 2 hosts.
+- [nixstats.com](https://nixstats.com/) - Free for one server. E-Mail Notifications, public status page, 60-second interval, and more.
+- [OnlineOrNot.com](https://onlineornot.com/) - OnlineOrNot provides uptime monitoring for websites and APIs, monitoring for cron jobs and scheduled tasks. Also provides status pages. The first five checks with a 3-minute interval are free. The free tier sends alerts via Slack, Discord, and Email.
+- [opsgenie.com](https://www.opsgenie.com/) — Powerful alerting and on-call management for operating always-on services. Free up to 5 users.
+- [paessler.com](https://www.paessler.com/) — Powerful infrastructure and network monitoring solution, including alerting, strong visualization capabilities, and basic reporting. Free up to 100 sensors.
+- [pagecrawl.io](https://pagecrawl.io/) - Monitor website changes, free for up to 6 monitors with daily checks.
+- [syagent.com](https://syagent.com/) — Noncommercial free server monitoring service, alerts and metrics.
+- [pagerly.io](https://pagerly.io/) - Manage on-calls on Slack (integrates with Pagerduty, OpsGenie). Free up to 1 team (one team refers to one on call)
+- [pagertree.com](https://pagertree.com/) - Simple interface for alerting and on-call management. Free up to 5 users.
+- [pingbreak.com](https://pingbreak.com/) — Modern uptime monitoring service. Check unlimited URLs and get downtime notifications via Discord, Slack, or email.
+- [pingpong.one](https://pingpong.one/) — Advanced status page platform with monitoring. The free tier includes one public customizable status page with an SSL subdomain. Pro plan is offered to open-source projects and non-profits free of charge.
+- [robusta.dev](https://home.robusta.dev/) — Powerful Kubernetes monitoring based on Prometheus. Bring your own Prometheus or install the all-in-one bundle. The free tier includes up to 20 Kubernetes nodes. Alerts via Slack, Microsoft Teams, Discord, and more. Integrations with PagerDuty, OpsGenie, VictorOps, DataDog, and many other tools.
+- [sematext.com](https://sematext.com/) — Free for 24-hour metrics, unlimited servers, ten custom metrics, 500,000 custom metrics data points, unlimited dashboards, users, etc.
+- [sitemonki.com](https://sitemonki.com/) — Website, domain, Cron & SSL monitoring, 5 monitors in each category for free
+- [sitesure.net](https://sitesure.net/) - Website and cron monitoring - 2 monitors free
+- [skylight.io](https://www.skylight.io/) — Free for first 100,000 requests (Rails only)
+- [speedchecker.xyz](https://probeapi.speedchecker.xyz/) — Performance Monitoring API, checks Ping, DNS, etc.
+- [stathat.com](https://www.stathat.com/) — Get started with ten stats for free, no expiration
+- [statuscake.com](https://www.statuscake.com/) — Website monitoring, unlimited tests free with limitations
+- [statusgator.com](https://statusgator.com/) — Status page monitoring, 3 monitors free
+- [thousandeyes.com](https://www.thousandeyes.com/) — Network and user experience monitoring. 3 locations and 20 data feeds of major web services free
+- [uptimerobot.com](https://uptimerobot.com/) — Website monitoring, 50 monitors free
+- [uptimetoolbox.com](https://uptimetoolbox.com/) — Free monitoring for five websites, 60-second intervals, public statuspage.
+- [zenduty.com](https://www.zenduty.com/) — End-to-end incident management, alerting, on-call management, and response orchestration platform for network operations, site reliability engineering, and DevOps teams. Free for up to 5 users.
+- [instatus.com](https://instatus.com/) - Get a beautiful status page in 10 seconds. Free forever with unlimited subs and unlimited teams.
+- [Squadcast.com](https://squadcast.com/) - Squadcast is an end-to-end incident management software designed to help you promote SRE best practices. Free forever plan available for up to 10 users.
+- [RoboMiri.com](https://robomiri.com/) - RoboMiri is a stable uptime monitor that offers a wide range of monitors: cronjob, keyword, website, port, ping. Twenty-five uptime checks with 3-minute interval checks for free. Alerts via Phone Call, SMS, Email, and Webhooks.
+- [Better Stack](https://betterstack.com/better-uptime) - Uptime monitoring, incident management, on-call scheduling/alerting, and status pages in a single product. The free plan includes ten monitors with 3-minute check frequency and status pages.
+- [Pulsetic](https://pulsetic.com/) - 10 monitors, 6 Months of historical Uptime/Logs, unlimited status pages, and custom domains included! For infinite time and unlimited email alerts for free. You don't need a credit card.
+- [Wachete](https://www.wachete.com/) - monitor five pages, checks every 24 hours.
+- [Xitoring.com](https://xitoring.com/) — Uptime monitoring: 20 free, Linux and Windows Server monitoring: 5 free, Status page: 1 free - Mobile app, multiple notification channel, and much more!
+
+![](/assets/images/monitoring/01-5e635a2b.png)

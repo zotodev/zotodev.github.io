@@ -1,0 +1,47 @@
+---
+title: 'Developer Resources : Miscellaneous'
+---
+
+- [BackgroundStyler.com](https://backgroundstyler.com/) - Create aesthetic screenshots of your code, text or images to share on social media.
+- [BinShare.net](https://binshare.net/) - Create & share code or binaries. Available to share as a beautiful image e.g. for Twitter / Facebook post or as a link e.g. for chats or forums.
+- [Blynk](https://blynk.io/) — A SaaS with API to control, build & evaluate IoT devices. Free Developer Plan with 5 devices, Free Cloud & data storage. Mobile Apps are also available.
+- [Bricks Note Calculator](https://free.getbricks.app/) - a note-taking app (PWA) with a powerful built-in multiline calculator.
+- [Carbon.now.sh](https://carbon.now.sh/) - create and share code snippets in an aesthetic screenshot-like image format. Usually used to aesthetically share/show off code snippets on Twitter or blog posts.
+- [Code Time](https://www.software.com/code-time) - an extension for time-tracking and coding metrics in VS Code, Atom, IntelliJ, Sublime Text, and more.
+- [Codepng](https://www.codepng.app/) - Create excellent snapshots from your source code to share on social media.
+- [CodeToImage](https://codetoimage.com/) - Create screenshots of code or text to share on social media.
+- [Cronhooks](https://cronhooks.io/) - Schedule on-time or recurring webhooks. The free plan allows 5 ad-hoc schedules.
+- [cron-job.org](https://cron-job.org/) - Online cronjobs service. Unlimited jobs are free of charge.
+- [datelist.io](https://datelist.io/) - Online booking / appointment scheduling system. Free up to 5 bookings per month, includes 1 calendar
+- [Domain Forward](https://domain-forward.com/) - A straightforward tool to forward any URL or Domain. Free up to 5 domains and 200k requests per month.
+- [Elementor](https://elementor.com/) — WordPress website builder. Free plan available with 40+ Basic Widgets.
+- [Form2Channel](https://form2channel.com/) — Place a static html form on your website and receive submissions directly to Google Sheets, Email, Slack, Telegram, or HTTP. No coding is necessary.
+- [Format Express](https://www.format-express.dev/) - Instant online format for JSON / XML / SQL.
+- [FOSSA](https://fossa.com/) - Scalable, end-to-end management for third-party code, license compliance and vulnerabilities.
+- [fullcontact.com](https://www.fullcontact.com/developer/pricing/) — Help your users know more about their contacts by adding social profile to your app. 500 free Person API matches/month
+- [Hook Relay](https://www.hookrelay.dev/) - Add webhook support to your app without the hassles: done-for-you queueing, retries with backoff, and logging. The free plan has 100 deliveries per day, 14-day retention, and 3 hook endpoints.
+- [http2.pro](https://http2.pro/) — HTTP/2 protocol readiness test and client HTTP/2 support detection API.
+- [kandi](https://kandi.openweaver.com/) — Jumpstart Application Development: build custom functions, and use cases, and complete applications faster through code snippets and open-source library reuse.
+- [Base64 decoder/encoder](https://devpal.co/base64-decode/) — Online free tool for decoding & encoding data.
+- [newreleases.io](https://newreleases.io/) - Receive notifications on email, Slack, Telegram, Discord, and custom webhooks for new releases from GitHub, GitLab, Bitbucket, Python PyPI, Java Maven, Node.js NPM, Node.js Yarn, Ruby Gems, PHP Packagist, .NET NuGet, Rust Cargo and Docker Hub.
+- [OnlineExifViewer](https://onlineexifviewer.com/) — View EXIF data online instantly for a photo including GPS location and metadata.
+- [PDFMonkey](https://www.pdfmonkey.io/) — Manage PDF templates in a dashboard, call the API with dynamic data, and download your PDF. Offers 300 free documents per month.
+- [Pika Code Screenshots](https://pika.style/templates/code-image) — Create beautiful, customizable screenshots from code snippets and VSCode using the extension.
+- [QuickType.io](https://quicktype.io/) - Quickly auto-generate models/class/type/interface and serializers from JSON, schema, and GraphQL for working with data quickly & safely in any programming language. Convert JSON into gorgeous, typesafe code in any language.
+- [RandomKeygen](https://randomkeygen.com/) - A free mobile-friendly tool that offers a variety of randomly generated keys and passwords you can use to secure any application, service, or device.
+- [ray.so](https://ray.so/) - Create beautiful images of your code snippets.
+- [readme.com](https://readme.com/) — Beautiful documentation made easy, free for Open Source.
+- [redirection.io](https://redirection.io/) — SaaS tool for managing HTTP redirections for businesses, marketing and SEO.
+- [redirect.ing](https://redirect.ing/) - Fast & secure domain forwarding without managing servers or SSL certificates. Free plan includes 10 hostnames and 100,000 requests per month.
+- [redirect.pizza](https://redirect.pizza/) - Easily manage redirects with HTTPS support. The free plan includes 10 sources and 100,000 hits per month.
+- [ReqBin](https://www.reqbin.com/) — Post HTTP Requests Online. Popular Request Methods include GET, POST, PUT, DELETE, and HEAD. Supports Headers and Token Authentication. Includes a basic login system for saving your requests.
+- [Smartcar API](https://smartcar.com/) - An API for cars to locate, get fuel tank, battery levels, odometer, unlock/lock doors, etc.
+- [snappify](https://snappify.com/) - Enables developers to create stunning visuals. From beautiful code snippets to fully fletched technical presentations. The free plan includes up to 3 snaps at once with unlimited downloads and 5 AI-powered code explanations per month.
+- [Sunrise and Sunset](https://sunrisesunset.io/api/) - Get sunrise and sunset times for a given longitude and latitude.
+- [superfeedr.com](https://superfeedr.com/) — Real-time PubSubHubbub compliant feeds, export, analytics. Free with less customization
+- [SurveyMonkey.com](https://www.surveymonkey.com/) — Create online surveys. Analyze the results online. The free plan allows only 10 questions and 100 responses per survey.
+- [Tiledesk](https://tiledesk.com/) - Create chatbots and conversational apps. Bring them omnichannel: from your website (live chat widget) to WhatsApp. Free plan with unlimited chatbots.
+- [Versionfeeds](https://versionfeeds.com/) — Custom RSS feeds for releases of your favorite software. Have the latest versions of your programming languages, libraries, or loved tools in one feed. (The first 3 feeds are free)
+- [videoinu](https://videoinu.com/) — Create and edit screen recordings and other videos online.
+
+![](/assets/images/developer-resources-miscellaneous/01-2f8fefc9.png)
